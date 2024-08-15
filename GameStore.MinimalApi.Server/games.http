@@ -1,0 +1,71 @@
+GET http://localhost:5289/games
+###
+GET http://localhost:5289/games/1
+###
+GET http://localhost:5289/games/5
+###
+POST http://localhost:5289/games
+Content-Type: application/json
+
+{
+    "name": "Minecraft",
+    "genreId": 5,
+    "price": 19.99,
+    "releaseDate": "2011-11-18"
+}
+
+###
+PUT http://localhost:5289/games/1
+Content-Type: application/json
+
+{
+    "name": "Street Fighter II Turbo", 
+    "genre":  "Fighting",
+    "price" : 9.99,
+    "releaseDate": "1991-02-01"
+}
+
+###
+DELETE  http://localhost:5289/games/3
+
+###
+POST http://localhost:5289/games
+Content-Type: application/json
+
+{
+    "name": "ForniteForniteForniteForniteFortniteForniteForniteForniteFortniteForniteFornite",
+    "genre": "Kids and Family",
+    "price": 19.99,
+    "releaseDate": "2011-11-18"
+}
+
+###
+PUT http://localhost:5289/games/2
+Content-Type: application/json
+
+{
+    "genre":  "Fighting",
+    "price" : 9.99,
+}
+
+###
+POST http://localhost:5289/games
+Content-Type: application/json
+
+{
+    "name": "Final Fantasy XIV",
+    "genreId" : 2,
+    "price": 59.99,
+    "releaseDate": "2010-02-01"
+}
+
+###
+PUT http://localhost:5289/games/1
+Content-Type: application/json
+
+{
+    "name" : "Street Fighter II Turbo",
+    "genreId":  1,
+    "price" : 19.99,
+    "releaseDate": "1991-02-01"
+}
